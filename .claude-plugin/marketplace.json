@@ -1,0 +1,19 @@
+{
+  "name": "teach-me",
+  "owner": {
+    "name": "zeapsu",
+    "url": "https://github.com/zeapsu"
+  },
+  "metadata": {
+    "description": "Marketplace for the teach-me socratic teaching plugin",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "teach-me",
+      "source": "./",
+      "description": "A socratic teaching mode for coding agents: trick questions that test deep intuition, guided hints instead of answer reveals, and devil's-advocate challenges even when you're right.",
+      "category": "learning"
+    }
+  ]
+}

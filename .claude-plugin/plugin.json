@@ -1,0 +1,13 @@
+{
+  "name": "teach-me",
+  "version": "1.0.0",
+  "description": "A socratic teaching mode for coding agents: trick questions that test deep intuition, guided hints instead of answer reveals, and devil's-advocate challenges even when you're right.",
+  "author": {
+    "name": "zeapsu",
+    "url": "https://github.com/zeapsu"
+  },
+  "homepage": "https://github.com/zeapsu/teach-me",
+  "repository": "https://github.com/zeapsu/teach-me",
+  "license": "MIT",
+  "keywords": ["teaching", "learning", "socratic", "quiz", "education", "code-understanding"]
+}
