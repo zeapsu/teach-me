@@ -2,30 +2,38 @@
 
 A socratic teaching mode for coding agents (Claude Code and OpenAI Codex).
 
-Most agents "teach" by lecturing: they explain, you nod, and an hour later you
-remember nothing. `teach-me` flips that. The agent reads the real code you want
-to understand, builds a mastery checklist, and then makes you *earn* every
-checkmark:
+You know the feeling: the agent ships a change, walks you through it, you nod
+along, and a week later you couldn't explain any of it to save your life. That's
+not learning — that's vibing. `teach-me` is for when you actually want the
+thing in your head.
 
-- **Trick questions by default.** Questions are designed so the
-  surface-pattern answer is wrong — subtle code twists, counterfactuals
-  ("why not just delete this guard?"), and textbook answers that fail in
-  *your* codebase for a discoverable reason. Recall questions never count
-  toward mastery.
-- **No answer reveals.** Get one wrong and the agent won't tell you the right
-  answer. It runs a socratic loop instead: a guiding question, the smallest
-  possible hint, and a re-ask — escalating only as needed. Only after ~3
-  failed rounds does it walk through the answer with you, and even then the
-  concept gets re-tested later before it counts.
-- **The troll.** Roughly one in three *correct* answers gets challenged anyway
-  — "Are you sure? What about the retry path?" — with the agent arguing the
-  wrong side convincingly. Hold firm with correct reasoning and you've proven
-  real mastery; fold and you were pattern-matching. Every challenge is
-  resolved honestly before moving on, so you're never left with a false
-  belief.
+So instead of lecturing, the agent reads the real code you want to understand,
+builds a mastery checklist, and makes you *earn* every checkmark:
+
+- **Trick questions by default.** No softballs. Every question is built so the
+  surface-pattern answer is wrong — subtle code twists, counterfactuals ("why
+  not just delete this guard? it looks redundant"), and textbook answers that
+  fail in *your* codebase for a reason you can actually find. Simple recall
+  questions never count toward mastery.
+- **No answer reveals.** Got one wrong? Tough — the agent won't tell you the
+  right answer. It nudges instead: a guiding question, the smallest possible
+  hint, and a re-ask. Only after ~3 failed rounds does it finally walk through
+  it with you, and even then the concept gets quietly re-tested later before
+  it counts.
+- **The troll.** This is the fun part. Roughly one in three *correct* answers
+  gets challenged anyway — "are you sure? what about the retry path?" — with
+  the agent arguing the wrong side convincingly. Hold firm with real reasoning
+  and you've proven you actually get it; fold and you were pattern-matching
+  all along. Every challenge gets resolved honestly before moving on, so
+  you're never left wondering what the truth was.
 
 The session ends when you've demonstrated understanding of everything on the
 checklist — not when the agent finishes explaining.
+
+Inspired by [Thariq's "teach me" skill](https://x.com/trq212/status/2061545633560010826)
+([gist](https://gist.github.com/ThariqS/1389dcdff9eba4789887a2211370f06b)) —
+this version turns the difficulty up: trick questions, no answer reveals, and
+a troll.
 
 ## Quickstart
 
