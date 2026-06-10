@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "teach-me",
-      "source": "./",
+      "source": "./plugins/teach-me",
       "description": "A socratic teaching mode for coding agents: trick questions that test deep intuition, guided hints instead of answer reveals, and devil's-advocate challenges even when you're right.",
       "category": "learning"
     }

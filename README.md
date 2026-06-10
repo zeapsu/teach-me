@@ -49,7 +49,7 @@ actually understand this", or "walk me through what you just did".
 
 ```bash
 git clone https://github.com/zeapsu/teach-me
-cp -r teach-me/skills/teach-me ~/.claude/skills/teach-me
+cp -r teach-me/plugins/teach-me/skills/teach-me ~/.claude/skills/teach-me
 ```
 
 ### Codex (plugin)
@@ -58,7 +58,7 @@ Codex's plugin system understands the same marketplace format:
 
 ```bash
 codex plugin marketplace add zeapsu/teach-me
-codex plugin add teach-me
+codex plugin add teach-me@teach-me
 ```
 
 ### Codex (manual)
@@ -106,10 +106,10 @@ to calibrate your confidence, never to plant false beliefs.
 
 ```
 .claude-plugin/
-  plugin.json        # Claude Code / Codex plugin manifest
   marketplace.json   # self-hosted marketplace (this repo IS the marketplace)
-skills/
-  teach-me/SKILL.md  # canonical skill (Claude Code; degrades gracefully elsewhere)
+plugins/teach-me/
+  .claude-plugin/plugin.json  # plugin manifest (Claude Code & Codex compatible)
+  skills/teach-me/SKILL.md    # canonical skill (degrades gracefully on any agent)
 codex/
   skills/teach-me/SKILL.md  # Codex-tuned variant for ~/.agents/skills
 scripts/
