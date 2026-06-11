@@ -1,5 +1,23 @@
 # Changelog
 
+## 1.1.0 — 2026-06-10
+
+- **Difficulty ramp:** questions start moderate and get subtler after streaks
+  of clean wins; struggles adjust hints, never difficulty.
+- **Confidence scoring:** learners rate gut confidence (1–5) on every
+  checklist answer before anything resolves. The troll targets
+  confident-and-correct answers; hesitant-but-correct answers get reinforced
+  instead of challenged.
+- **Boss question:** a final synthesis question spanning multiple checklist
+  items gates the end of the session.
+- **Calibration report:** the recap now reports overconfidence (sure but
+  wrong) and underconfidence (right but hesitant).
+- **Cross-session memory:** opt-in save of the session (checklist, struggles,
+  calibration) to `.teach-me/<subject>.md`; later sessions on the same area
+  open with retrieval checks on previously shaky items.
+- **Gentle mode:** "go gentle" / "no trolling" drops the troll while keeping
+  trick questions and the socratic loop, announced explicitly.
+
 ## 1.0.0 — 2026-06-10
 
 Initial release.

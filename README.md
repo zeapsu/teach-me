@@ -28,7 +28,25 @@ builds a mastery checklist, and makes you *earn* every checkmark:
   you're never left wondering what the truth was.
 
 The session ends when you've demonstrated understanding of everything on the
-checklist — not when the agent finishes explaining.
+checklist — and survived one final **boss question** that makes you synthesize
+all of it at once ("design the bug that would slip past this code's tests").
+Not when the agent finishes explaining.
+
+A few more things it does along the way:
+
+- **Difficulty ramps with you.** Rattle off a streak of clean wins and the
+  tricks get subtler. You don't get to coast.
+- **Confidence scoring.** You rate your gut confidence (1–5) on every answer
+  before anything resolves. Confident-and-correct answers are the troll's
+  favorite targets; hesitant-but-correct ones get reinforced instead. The
+  recap includes a calibration report — where you were sure but wrong, and
+  right but hesitant.
+- **It remembers.** At the end it offers to save the session (checklist,
+  struggles, calibration) to `.teach-me/` in your project. Next time you ask
+  about the same area, it opens by re-testing what was shaky last time.
+- **Gentle mode.** Say "go gentle" or "no trolling" when you're fried and it
+  drops the troll — keeping the trick questions and socratic hints — and
+  tells you it's doing so.
 
 Inspired by [Thariq's "teach me" skill](https://x.com/trq212/status/2061545633560010826)
 ([gist](https://gist.github.com/ThariqS/1389dcdff9eba4789887a2211370f06b)) —
@@ -106,6 +124,9 @@ git clone https://github.com/zeapsu/teach-me
 | You fold under challenge | Back into the socratic loop — you were guessing. |
 | First question of the session | Never trolled. Trust first. |
 | An answer you just struggled to earn | Never trolled. Hard-won wins stand. |
+| You answer right but rate confidence 1–2 | Reinforced, not trolled — it confirms *why* you were right. |
+| Every checklist item is checked | One boss question synthesizing it all, then a recap with your calibration report. |
+| You say "go gentle" | The troll stays home; trick questions and socratic hints remain. It tells you the mode changed. |
 
 Every challenge is always resolved honestly before moving on. The troll exists
 to calibrate your confidence, never to plant false beliefs.

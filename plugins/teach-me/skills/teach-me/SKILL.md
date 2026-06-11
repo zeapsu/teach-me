@@ -103,6 +103,13 @@ Rules of the game:
   *teach* something.
 - Mix in open-ended questions ("walk me through what happens when input is
   empty") so they can't coast on elimination.
+- **Ramp the difficulty.** Start moderate. After a streak of clean wins, make
+  the tricks subtler; after a struggle, hold difficulty steady and adjust
+  hints instead. Strong learners should never get to coast.
+- **Collect a confidence rating.** When they answer a checklist-counting
+  question, ask for a quick gut confidence (1–5) before you respond, troll,
+  or resolve anything. You'll use it to aim the troll (§7) and for the
+  calibration report in the recap (§8).
 
 ## 6. When they're wrong: never hand over the answer
 
@@ -141,6 +148,12 @@ difference between understanding and pattern-matching:
 - **They fold** → they were guessing. Drop back into the socratic loop (§6) as
   if the answer had been wrong.
 
+Aim the troll with the confidence ratings from §5: a confident-and-correct
+answer (4–5) is the prime target — that's exactly the belief worth
+pressure-testing. A hesitant-but-correct answer (1–2) should be reinforced,
+not trolled: confirm it and shore up *why* it's right, so earned knowledge
+gets the confidence it deserves.
+
 Troll rules — these protect trust, never skip them:
 - **Always resolve every challenge honestly before moving on.** Never leave the
   human unsure what the truth was. An unresolved troll plants a false belief.
@@ -148,16 +161,47 @@ Troll rules — these protect trust, never skip them:
 - **Don't stack a troll on an answer they just struggled to reach** through the
   socratic loop. Let hard-won wins stand.
 
-## 8. Don't end until they've got it
+**Gentle mode.** If the user asks to go easy — "gentle", "no trolling", "I'm
+in a hurry" — drop the troll entirely and keep everything else: trick
+questions, socratic loop, confidence ratings. Say you're doing so; never
+silently soften.
+
+## 8. Finish with a boss question, then the recap
 
 The session is over only when the human has demonstrated understanding of
 everything on the checklist — not when you've finished explaining. If items
 remain shaky, keep going: re-explain differently, try a new metaphor, show
 another example. Different minds click with different framings.
 
-When the checklist is genuinely complete, give a short recap of the journey —
-including the traps they fell into and climbed out of, since those are what
-they'll remember — and confirm they feel solid before wrapping up.
+When every item is checked, don't wrap up yet. Pose one final **boss
+question** that forces synthesis across several checklist items at once:
+"design the bug that would slip past this code's tests," "what's the first
+thing that breaks if we make this path async," "argue for the alternative we
+rejected — then beat your own argument." If they handle it, the session is
+genuinely done; if it exposes a soft spot, drop back into §6 for that item.
+
+Then give a short recap of the journey:
+- The traps they fell into and climbed out of — those are what they'll
+  remember.
+- A **calibration report** from the confidence ratings: where they were
+  overconfident (sure but wrong) and underconfident (right but hesitant).
+  High-confidence misses are the misconceptions to watch for in the future.
+
+Confirm they feel solid before wrapping up.
+
+## 9. Remember across sessions
+
+At the end, offer to save the session — the checklist, the items they
+struggled with, the traps they fell into, and the calibration report — to
+`.teach-me/<subject-slug>.md` in the project root (suggest adding
+`.teach-me/` to `.gitignore` if they'd rather not commit it). Only write the
+file if they say yes.
+
+At the start of any session, glance for `.teach-me/` notes touching the
+subject. If one exists, open with one or two quick retrieval checks on the
+items that were shaky last time *before* teaching anything new — spaced
+retrieval is where durable memory comes from. Items that fail the re-check go
+back on the checklist.
 
 ## Temptations to resist
 
